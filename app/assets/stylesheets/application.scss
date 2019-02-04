@@ -1,0 +1,11 @@
+$theme-colors: (
+  "bas_col_l": #FBB8B4,   // Adobe Color: monochromatic, lightest
+  "bas_col": #FA7268,   // Pantone: Living Coral Color
+  "bas_col_d": #7A3833,   // Adobe Color: monochromatic, darkest
+  "tr_bas_col": #68FAA5,   // Adobe Color: complementary, lightest
+);
+
+@import "bootstrap";
+@import "static_pages";
+@import "font-awesome-sprockets";
+@import "font-awesome";

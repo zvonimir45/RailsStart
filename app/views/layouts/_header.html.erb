@@ -1,0 +1,73 @@
+<div class="px-0 container-fluid">
+
+<nav class="p-0 rounded navbar navbar-expand-sm navbar-dark bg-dark">
+
+  <div class="ml-1 mr-2 navbar-brand">
+    <%= link_to "Code Help", root_path, title: "Go to Homepage", class: "text-tr_bas_col",
+      style: "font-weight: bold; text-decoration: none" %>
+  </div>
+
+  <button class="mr-1 navbar-toggler" data-toggle="collapse" data-target="#navbarColapse1" 
+    class: "btn btn-outline-bas_col btn-sm" aria-controls="navbarColapse1" aria-expanded="false" 
+    aria-label="Toggle navigation"> <span class="fa fa-bars"></span>
+  </button>
+
+  <div class="p-1 collapse navbar-collapse" id="navbarColapse1">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="mr-1 nav-item"><%= link_to "P-01", p01_path, 
+        class: "py-0 px-1 nav-link btn btn-outline-bas_col btn-sm", 
+        title: "Content of Page01" %></li>
+      <li class="mr-1 nav-item"><%= link_to "P-02", p02_path, 
+        class: "py-0 px-1 nav-link btn btn-outline-bas_col btn-sm", 
+        title: "Content of Page02"  %></li>
+      <li class="mr-1 nav-item"><%= link_to "P-03", p03_path, 
+        class: "py-0 px-1 nav-link btn btn-outline-bas_col btn-sm", 
+        title: "Content of Page03" %></li>
+      <li class="mr-1 nav-item"><%= link_to "P-04", p04_path, 
+        class: "py-0 px-1 nav-link btn btn-outline-bas_col btn-sm", 
+        title: "Content of Page04" %></li>
+      <li class="mr-1 nav-item"><%= link_to "P-05", p05_path, 
+        class: "py-0 px-1 nav-link btn btn-outline-bas_col btn-sm", 
+        title: "Content of Page04" %></li>
+    </ul> <!-- navbar-nav mr-auto -->
+
+    <ul class="navbar-nav">
+
+      <li class="mr-1 nav-item dropdown">
+        <%= link_to "Members ", "#", id: "navbarDropdown", 
+          "data-toggle": "dropdown", class: "dropdown-toggle py-0 px-1 nav-link btn btn-outline-bas_col btn-sm", 
+          "aria-haspopup": "true", "aria-expanded": "false" %>
+        <ul class="dropdown-menu dropdown-menu-right bg-bas_col" aria-labelledby="navbarDropdown">
+          <li><%= link_to "Guests", guests_path, class: "dropdown-item" %></li>
+          <li><%= link_to "Candidates", candidates_path, class: "dropdown-item" %></li>
+          <li><%= link_to "Full", full_path, class: "dropdown-item" %></li>
+          <li><%= link_to "Honorary", honorary_path, class: "dropdown-item" %></li>
+      </ul>
+      </li> <!-- nav-item dropdown  -->      
+
+      <li class="mr-1 nav-item"><%= link_to "<i class='fa fa-phone'></i>".html_safe, contacts_path, class: "py-0 px-1  nav-link btn btn-outline-bas_col btn-sm", 
+        title: "Contact" %></li>
+
+      <li class="mr-1 nav-item dropdown">
+        <%= link_to "Go to ", "#", id: "navbarDropdown", 
+          "data-toggle": "dropdown", class: "dropdown-toggle py-0 px-1 nav-link btn btn-outline-bas_col btn-sm", 
+          "aria-haspopup": "true", "aria-expanded": "false", style: "margin-right: 0px" %>
+        <ul class="dropdown-menu dropdown-menu-right bg-bas_col" aria-labelledby="navbarDropdown">
+          <li><%= link_to "Home", root_path, class: "dropdown-item"  %></li>
+          <li><%= link_to "Contact", contacts_path, class: "dropdown-item"  %></li>
+          <li><%= link_to "About", about_path, class: "dropdown-item"  %></li>
+          <li><%= link_to "Help", help_path, class: "dropdown-item"  %></li>
+          <li><%= link_to "Sitemap", sitemap_path, class: "dropdown-item" %></li>
+          <li><%= link_to "Staff", staff_path, class: "dropdown-item" %></li>
+          <li><%= link_to "Links", links_path, class: "dropdown-item" %></li>
+        </ul>
+      </li> <!-- mr-1 nav-item dropdown  -->      
+
+    </ul> <!-- navbar-nav -->
+
+  </div> <!-- navbar-collapse -->
+
+</nav>
+
+</div>

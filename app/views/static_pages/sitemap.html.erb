@@ -1,0 +1,67 @@
+<% provide(:title, "Sitemap") %>
+<h1>Sitemap</h1>
+
+<hr>
+<a title="Go to Homepage" class="text-tr_bas_col" style="font-weight: bold; text-decoration: none" href="/"><h2>CodeHelp</h2></a>
+<hr>
+
+<h2>Pages - header menu:</h2>
+  <ul class="nav nav-pills">
+    <li class="mr-1 nav-item"><%= link_to "P-01", p01_path, 
+      class: "py-0 px-1 nav-link bg-bas_col_d text-bas_col_l", 
+      title: "Content of Page01" %></li>
+    <li class="mr-1 nav-item"><%= link_to "P-02", p02_path, 
+      class: "py-0 px-1 nav-link bg-bas_col_d text-bas_col_l", 
+      title: "Content of Page02"  %></li>
+    <li class="mr-1 nav-item"><%= link_to "P-03", p03_path, 
+      class: "py-0 px-1 nav-link bg-bas_col_d text-bas_col_l", 
+      title: "Content of Page03" %></li>
+    <li class="mr-1 nav-item"><%= link_to "P-04", p04_path, 
+      class: "py-0 px-1 nav-link bg-bas_col_d text-bas_col_l", 
+      title: "Content of Page04" %></li>
+    <li class="mr-1 nav-item"><%= link_to "P-05", p05_path, 
+      class: "py-0 px-1 nav-link bg-bas_col_d text-bas_col_l", 
+      title: "Content of Page04" %></li>
+  </ul>
+<hr>
+
+<h2>Members - header dropdown menu:</h2>
+  <ul class="nav nav-pills">
+    <li><%= link_to "Guests", guests_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Candidates", candidates_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Full", full_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Honorary", honorary_path, class: "dropdown-item bg-bas_col_l" %></li>
+  </ul>
+<hr>
+
+<h2>Go to - header dropdown menu:</h2>
+  <ul class="nav nav-pils">
+    <li><%= link_to "Home", root_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Contact", contacts_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "About", about_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Help", help_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Sitemap", sitemap_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Staff", staff_path, class: "dropdown-item bg-bas_col_l" %></li>
+    <li><%= link_to "Links", links_path, class: "dropdown-item bg-bas_col_l" %></li>
+  </ul>
+<hr>
+
+<h2>Go to - footer menu icons:</h2>
+  <ul class="nav nav-pills">
+    <li class="mr-1 nav-item"><%= link_to "<i class='fa fa-home'></i>".html_safe, root_path, 
+      class: "py-0 px-2 nav-link bg-bas_col_d text-bas_col_l", title: "Go to Homepage" %></li>
+    <li class="mr-1 nav-item"><%= link_to "<i class='fa fa-phone'></i>".html_safe, contacts_path, 
+      class: "py-0 px-2 nav-link bg-bas_col_d text-bas_col_l", title: "Contact" %></li>
+    <li class="mr-1 av-item"><%= link_to "<i class='fa fa-info'></i>".html_safe, about_path, 
+      class: "py-0 px-2 nav-link bg-bas_col_d text-bas_col_l", title: "About" %> </li>
+    <li class="mr-1 nav-item"><%= link_to "<i class='fas fa-hospital-symbol'></i>".html_safe, help_path, 
+      class: "py-0 px-2 nav-link bg-bas_col_d text-bas_col_l", title: "Sitemap" %></li>
+    <li class="mr-1 nav-item"><%= link_to "<i class='fa fa-sitemap'></i>".html_safe, sitemap_path, 
+      class: "py-0 px-2 nav-link bg-bas_col_d text-bas_col_l", title: "Sitemap" %></li>
+    <li class="mr-1 nav-item"><%= link_to "<i class='fa fa-bullseye'></i>".html_safe, staff_path, 
+      class: "py-0 px-2 nav-link bg-bas_col_d text-bas_col_l", title: "Staff" %></li>
+    <li class="mr-1 nav-item"><%= link_to "<i class='fa fa-link'></i>".html_safe, links_path, 
+      class: "py-0 px-2 nav-link bg-bas_col_d text-bas_col_l", title: "Links" %></li>
+  </ul>
+<hr>
+

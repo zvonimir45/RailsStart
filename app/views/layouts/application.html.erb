@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-bas_col">
+<head>
+  <title><%= full_title(yield(:title)) %></title>
+  <meta charset="utf-8">
+  <meta name="description" content="Free reminder for geek lost in virtual space of web 
+    design and hosting: HTML, CSS, JavaScript, Bootstrap, PHP, WordPress, Ruby on Rails.">
+  <meta name="keywords" content="Web design, Web hosting, HTML, CSS, JavaScript, jQuery, 
+    Bootstrap 4, PHP, WordPress, Ruby 2.4.3, Ruby on Rails 5.2.0">
+  <meta name="author" content="Zvonimir Kolumbic">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= render 'layouts/shim' %>
+</head>
+<body class="px-2 bg-bas_col">
+  <%= render 'layouts/header' %>
+  <%= yield %>
+  <%= render 'layouts/footer' %>
+  <%#= debug(params) if Rails.env.development? %>
+</body>
+</html>
+
